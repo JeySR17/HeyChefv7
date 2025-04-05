@@ -78,7 +78,6 @@ Unless required by applicable law or agreed to in writing, software distributed 
 - Built using:
   - Firebase Realtime Database & Authentication
   - Glide (image loading)
-  - ImgBB for image hosting
   - Android SDK & Java
 
 ---
