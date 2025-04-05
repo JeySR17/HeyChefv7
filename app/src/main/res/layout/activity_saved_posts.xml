@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/savedPostsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavedPostsActivity">
+
+    <!-- Toolbar with back button -->
+    <LinearLayout
+        android:id="@+id/toolbarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@color/statusBarColor">
+
+    <ImageView
+        android:id="@+id/btnBackSaved"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_back_arrow"
+        android:tint="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Posts"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp" />
+</LinearLayout>
+
+    <!-- RecyclerView to show saved posts -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerSavedPosts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/toolbarLayout"
+    android:padding="8dp"
+    android:clipToPadding="false"
+    android:scrollbars="vertical" />
+
+</RelativeLayout>

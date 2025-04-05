@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Custom Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/statusBarColor"
+        android:elevation="4dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe Details"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Recipe Image -->
+            <ImageView
+                android:id="@+id/imgRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/btnSaveRecipe"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_bookmark_outline"
+                android:tint="@color/colorPrimary"
+                />
+
+
+            <!-- Recipe Name -->
+            <TextView
+                android:id="@+id/txtRecipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Recipe Name"
+
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Recipe Description -->
+            <TextView
+                android:id="@+id/txtRecipeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Recipe Description"
+                android:textSize="16sp"/>
+
+            <!-- Chef (Publisher) -->
+            <TextView
+                android:id="@+id/txtChef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="By: Chef"
+                android:textSize="14sp"
+                 />
+
+            <!-- Ingredients Label -->
+            <TextView
+                android:id="@+id/labelIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Ingredients:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                 />
+
+            <!-- Ingredients Content -->
+            <TextView
+                android:id="@+id/txtIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="• Ingredient 1\n• Ingredient 2"
+                android:textSize="16sp"
+                 />
+
+            <!-- Instructions Label -->
+            <TextView
+                android:id="@+id/labelInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Instructions:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                 />
+
+            <!-- Instructions Content -->
+            <TextView
+                android:id="@+id/txtInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="1. Do this\n2. Do that"
+                android:textSize="16sp"
+                 />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

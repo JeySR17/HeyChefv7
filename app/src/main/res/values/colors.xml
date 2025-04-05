@@ -1,0 +1,20 @@
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#4CAF50</color>  <!-- Green -->
+    <color name="colorPrimaryVariant">#388E3C</color>  <!-- Darker Green -->
+    <color name="colorOnPrimary">#FFFFFF</color>  <!-- White text/icons -->
+
+    <!-- Secondary Colors -->
+    <color name="colorSecondary">#81C784</color>  <!-- Light Green -->
+    <color name="colorSecondaryVariant">#66BB6A</color>
+    <color name="colorOnSecondary">#000000</color>  <!-- Black text/icons -->
+
+    <!-- Background & Surface -->
+    <color name="colorBackground">#E8F5E9</color>  <!-- Very Light Green -->
+    <color name="colorSurface">#C8E6C9</color>  <!-- Slightly Darker Green -->
+    <color name="colorOnSurface">#000000</color>  <!-- Black text -->
+
+    <!-- Bottom Navigation -->
+    <color name="navBarColor">#388E3C</color>
+    <color name="statusBarColor">#388E3C</color>
+</resources>

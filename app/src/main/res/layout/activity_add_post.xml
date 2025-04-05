@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity">
+
+    <!-- Custom Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/customToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/statusBarColor"
+        android:elevation="4dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Post"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFood"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorBackground"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_photo" />
+
+            <EditText
+                android:id="@+id/edtFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dish Name"
+                android:padding="12dp"
+                android:background="@drawable/bg_edittext"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtFoodDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dish Description"
+                android:padding="12dp"
+                android:background="@drawable/bg_edittext"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:minHeight="120dp"
+                android:gravity="top" />
+
+            <EditText
+                android:id="@+id/editTextIngredients"
+                android:hint="Ingredients (one per line)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@drawable/bg_edittext"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:minLines="4"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/editTextInstructions"
+                android:hint="Instructions (one per line)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@drawable/bg_edittext"
+                android:textSize="18sp"
+                android:layout_marginTop="12dp"
+                android:minLines="4"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/colorPrimaryVariant"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

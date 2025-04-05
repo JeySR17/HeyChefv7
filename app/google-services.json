@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "791912284844",
+    "firebase_url": "https://heychefv8-default-rtdb.firebaseio.com",
+    "project_id": "heychefv8",
+    "storage_bucket": "heychefv8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791912284844:android:352a43de9d62bc55c15509",
+        "android_client_info": {
+          "package_name": "com.example.heychefv7"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9quO9_ZCk9JA0QL7PDhNG5vtxLniI9mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
