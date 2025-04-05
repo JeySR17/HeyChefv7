@@ -26,8 +26,6 @@ HeyChef is a social media-style Android app for food lovers and chefs to share t
 ## 🧪 How to Run
 
 1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/heychef-app.git
 2. Open it in Android Studio.
 3. Add your Firebase configuration file (google-services.json) to the app/ directory.
 4. Run the app on an emulator or physical Android device.
