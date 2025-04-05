@@ -15,19 +15,6 @@ HeyChef is a social media-style Android app for food lovers and chefs to share t
 - 📲 Android native UI with Java and XML
 - 💾 Local image hosting using Firebase Storage
 
-## 📸 Screenshots
-
-### 🏠 Home Screen
-![Home Screen](screenshots/home.png)
-
-### ➕ Add Post
-![Add Post](screenshots/add_post.png)
-
-### 🍽️ Recipe View
-![Recipe View](screenshots/recipe_view.png)
-
-> _(Add screenshots of your app's main screens here)_
-
 ## 🛠 Tech Stack
 
 - 💻 **Language:** Java  
